@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-tab": "../../dist/tab/index",
+    "van-tabs": "../../dist/tabs/index",
+    "van-card": "../../dist/card/index"
+  },
+  "navigationBarTitleText": "公考头条",
+  "disableScroll": true
+}

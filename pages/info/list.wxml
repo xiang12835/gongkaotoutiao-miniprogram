@@ -1,0 +1,55 @@
+<!-- <van-tabs active="{{ active }}">
+  <van-tab title="标签 1">内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+  <van-tab title="标签 5">内容 5</van-tab>
+  <van-tab title="标签 6">内容 6</van-tab>
+</van-tabs> -->
+
+<view class="cate-nav">
+  <scroll-view scroll-x="true" class="cate-nav-body" style="width: 750rpx;" scroll-left="{{scrollLeft}}">
+    <view wx:for="{{navList}}" wx:key="{{item.id}}" class="item {{ id == item.id ? 'active' : ''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCate">
+      <view class="name">{{item.name}}</view>
+    </view>
+  </scroll-view>
+</view> 
+
+<scroll-view scroll-y="true" scroll-top="{{scrollTop}}" style="height:{{scrollHeight}};">
+
+  <view class="cate-item">
+    <block wx:for="{{goodsList}}" wx:key="{{item.id}}" wx:for-item="info">
+      <navigator url="./detail?id={{item.id}}">
+        <view class="news-item">
+          <view class="news-item-left">
+            <text class="news-item-title">{{info.title}}</text>
+          </view>
+          <view class="news-item-right">
+            <image src="{{info.thumbnail}}" class="news-image" />
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+</scroll-view>
+
+
+
+
+
+
+
+<!-- <block wx:for="{{infoList}}" wx:for-item="info" wx:key="{{item.id}}">
+
+  <van-card 
+  num="{{info.view_count}}" 
+  price="{{info.desc}}"
+  desc="{{info.created_at}}" 
+  title="{{info.title}}"
+  tag="{{info.tag_name}}" 
+  thumb="{{info.thumbnail}}" 
+  currency=""
+  />
+
+</block> -->
