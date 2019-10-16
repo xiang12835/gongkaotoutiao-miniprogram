@@ -5,5 +5,5 @@
     "van-card": "../../dist/card/index"
   },
   "navigationBarTitleText": "公考头条",
-  "disableScroll": true
+  "disableScroll": false
 }
