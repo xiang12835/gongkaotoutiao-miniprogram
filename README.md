@@ -1,2 +1,2 @@
-# miniprogram-gongkaotoutiao
-miniprogram-gongkaotoutiao
+# gongkaotoutiao-miniprogram
+gongkaotoutiao-miniprogram
