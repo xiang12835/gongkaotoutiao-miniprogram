@@ -15,7 +15,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.5",
 	"appid": "wx100166a98a806f03",
-	"projectname": "miniprogram-gongkaotoutiao",
+	"projectname": "gongkaotoutiao-miniprogram",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
